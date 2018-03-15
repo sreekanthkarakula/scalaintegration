@@ -24,7 +24,7 @@ object SparkSQLExample {
       .config("spark.some.config.option", "some-value")
       .getOrCreate()
 
-    val describedf = spark.read.format("com.databricks.spark.csv").option("inferSchema", "true").option("header", "true").load("hdfs://avdfmaster-new.northeurope.cloudapp.azure.com:8020/datafabric/c7cc99f0-ecbe-4444-899e-26214c7e7f33/folder1/*")
+    val describedf = spark.read.format("com.databricks.spark.csv").option("inferSchema", "true").option("header", "true").load("hdfs://host:8020/*")
 
     val sparseVec1 = Vectors.sparse(20, Array(0,2,18,19), Array(5, 3, 8,9))
 
