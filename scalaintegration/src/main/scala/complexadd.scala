@@ -1,3 +1,6 @@
+
+//operator overloadin in scala. here the value operator + definition is to add two complex numbers.
+
 class Complex(val real:Int, val imaginary:Int){
   def +(complex:Complex):Complex={
     new Complex(real+complex.real, imaginary+complex.imaginary)
